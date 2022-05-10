@@ -22,7 +22,7 @@ class MainApp extends StatelessWidget {
   var completeTeste = FutureBuilder(
     future: Future.delayed(
       const Duration(seconds: 3),
-      () => const ThemeTeste(Colors.red, Colors.deepPurpleAccent, 'Lato'),
+      () => const ThemeTeste(Colors.green, Colors.deepPurpleAccent, 'Anton'),
     ),
     builder: (BuildContext context, AsyncSnapshot<ThemeTeste> snapshot) {
       if (snapshot.connectionState == ConnectionState.waiting) {
